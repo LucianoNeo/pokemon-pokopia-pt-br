@@ -19,7 +19,7 @@ O ZIP contém somente esses três arquivos modificados. O FDATA pertence ao upda
 3. Extraia o ZIP no mod RomFS associado ao update 327680, preservando a árvore `romfs` e os nomes dos arquivos. Na instalação manual, substitua os arquivos correspondentes dentro da pasta `romfs` do update.
 4. Mantenha o idioma do jogo em inglês para carregar a tabela C0 substituída.
 
-Não substitua apenas um dos dois arquivos: o BIN e o IDX precisam permanecer juntos. Para remover a tradução, retire os dois arquivos do mod ou restaure os originais.
+Mantenha `LD_C0_R.BIN` e `LI_C0_R.IDX` juntos para carregar os textos. O FDATA também é necessário para traduzir o aviso da tela inicial. Para remover o pacote, retire os três arquivos do mod ou restaure os originais correspondentes.
 
 ## Textos ainda pendentes
 

@@ -1,6 +1,6 @@
 # Pokémon Pokopia — Tradução PT-BR
 
-**Versão 0.0.1 — prévia incompleta**
+**Versão 0.0.2 — prévia incompleta**
 
 Esta versão substitui os textos da tabela em inglês do jogo por traduções em português do Brasil. Foi preparada para a versão 1.0.4 do jogo e continua em revisão; alguns textos ainda aparecem em inglês.
 

@@ -1,6 +1,6 @@
 # Pokémon Pokopia — Tradução PT-BR
 
-**Versão 0.0.4 — tradução parcial**
+**Versão 0.0.5 — tradução parcial**
 
 Patch comunitário para Pokémon Pokopia 1.0.4, aplicado ao RomFS do update 327680. O jogo deve permanecer configurado em inglês para carregar a tabela C0 modificada.
 
@@ -10,11 +10,31 @@ Patch comunitário para Pokémon Pokopia 1.0.4, aplicado ao RomFS do update 3276
 
 A tradução é feita com auxílio de inteligência artificial e revisada manualmente. O projeto ainda está incompleto; alguns textos permanecem em inglês e novas correções virão em versões futuras.
 
-## O que mudou na versão 0.0.4
+## O que mudou na versão 0.0.5
 
-- Revisão semântica de falas e expressões para evitar traduções literais fora de contexto, incluindo o som de telefone `ring ring` → **trim-trim**.
-- Ajustes em falas de despedida e retorno, como **“Entendi! Então vou indo. Volto logo!”** e **“Voltei! Trouxe frutas! Preparem-se para comemorar!”**.
-- Correções contextuais adicionais em textos do jogo. A tradução continua parcial; `PRESS A BUTTON` permanece em inglês.
+- Adicionadas quatro capturas de tela para mostrar exemplos da tradução em uso.
+- O ZIP traz os mesmos arquivos de texto da versão 0.0.4; esta atualização não altera o conteúdo traduzido do jogo. Ela mantém as revisões semânticas e contextuais anteriores.
+- A tradução continua parcial; `PRESS A BUTTON` permanece em inglês.
+
+## Exemplos no jogo
+
+Capturas de tela da tradução em uso:
+
+**Pedidos do Ermo Ressequido**
+
+![Quadro de pedidos do Ermo Ressequido em português](docs/screenshots/pedidos-ermo-ressequido.png)
+
+**Diálogo com Hitmonchan**
+
+![Conversa de Hitmonchan com Ditto em português](docs/screenshots/dialogo-hitmonchan.png)
+
+**Tutorial: alcançando lugares altos**
+
+![Tutorial sobre alcançar lugares altos e controles traduzidos](docs/screenshots/tutorial-lugares-altos.png)
+
+**Menu de pedidos**
+
+![Menu de pedidos e mapa do Ermo Ressequido em português](docs/screenshots/menu-pedidos.png)
 
 ## Arquivos do ZIP
 

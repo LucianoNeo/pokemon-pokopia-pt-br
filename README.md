@@ -1,6 +1,6 @@
 # Pokémon Pokopia — Tradução PT-BR
 
-**Versão 0.0.3 — tradução parcial**
+**Versão 0.0.4 — tradução parcial**
 
 Patch comunitário para Pokémon Pokopia 1.0.4, aplicado ao RomFS do update 327680. O jogo deve permanecer configurado em inglês para carregar a tabela C0 modificada.
 
@@ -10,16 +10,16 @@ Patch comunitário para Pokémon Pokopia 1.0.4, aplicado ao RomFS do update 3276
 
 A tradução é feita com auxílio de inteligência artificial e revisada manualmente. O projeto ainda está incompleto; alguns textos permanecem em inglês e novas correções virão em versões futuras.
 
-## O que mudou na versão 0.0.3
+## O que mudou na versão 0.0.4
 
-- Tradução dos rótulos do menu de serviços: `Challenges` → **Desafios**, `Shop` → **Loja**, `Get Items` → **Resgatar itens**, `Link Play` → **Jogar em rede**, `Stamp Card` → **Cartão de selos** e `Appraise` → **Avaliar**.
-- Restauração do arquivo original da tela inicial para remover a textura modificada que causava glitch gráfico. Por isso, `PRESS A BUTTON` continua em inglês nesta versão.
+- Revisão semântica de falas e expressões para evitar traduções literais fora de contexto, incluindo o som de telefone `ring ring` → **trim-trim**.
+- Ajustes em falas de despedida e retorno, como **“Entendi! Então vou indo. Volto logo!”** e **“Voltei! Trouxe frutas! Preparem-se para comemorar!”**.
+- Correções contextuais adicionais em textos do jogo. A tradução continua parcial; `PRESS A BUTTON` permanece em inglês.
 
 ## Arquivos do ZIP
 
 - `romfs/LD_C0_R.BIN` — tabela de textos traduzidos.
 - `romfs/LI_C0_R.IDX` — índice correspondente; deve ficar junto do arquivo de textos.
-- `romfs/motor_asset_re/KIDS_PLATFORM_OUNCE/0x00011c54.fdata` — arquivo original da tela inicial, incluído para substituir o arquivo gráfico alterado na versão 0.0.2.
 
 ## Instalação
 

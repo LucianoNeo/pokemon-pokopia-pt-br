@@ -1,55 +1,46 @@
 # Pokémon Pokopia — Tradução PT-BR
 
-**Versão 0.0.5 — tradução parcial**
+## Sobre o projeto
 
-Patch comunitário para Pokémon Pokopia 1.0.4, aplicado ao RomFS do update 327680. O jogo deve permanecer configurado em inglês para carregar a tabela C0 modificada.
+Tradução comunitária não oficial de **Pokémon Pokopia 1.0.4** para português brasileiro, por **LucianoNeo**, feita com auxílio de inteligência artificial e revisão manual.
 
-> ⭐ **Antes de baixar, dê uma estrela no repositório:** [LucianoNeo/pokemon-pokopia-pt-br](https://github.com/LucianoNeo/pokemon-pokopia-pt-br). Isso ajuda o projeto a chegar a mais jogadores.
+**Versão do mod: 1.0.0 — tradução finalizada para o jogo 1.0.4.** O patch é instalado no RomFS do update **327680**. Os nomes dos golpes permanecem em inglês.
 
-## Sobre a tradução
+⭐ Antes de baixar, dê uma estrela no [repositório](https://github.com/LucianoNeo/pokemon-pokopia-pt-br) para apoiar o projeto.
 
-A tradução é feita com auxílio de inteligência artificial e revisada manualmente. O projeto ainda está incompleto; alguns textos permanecem em inglês e novas correções virão em versões futuras.
+## Download
 
-## O que mudou na versão 0.0.5
+[**Baixar tradução PT-BR 1.0.0 (ZIP)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v1.0.0/Pokemon-Pokopia-PT-BR-v1.0.0.zip)
 
-- Adicionadas quatro capturas de tela para mostrar exemplos da tradução em uso.
-- O ZIP traz os mesmos arquivos de texto da versão 0.0.4; esta atualização não altera o conteúdo traduzido do jogo. Ela mantém as revisões semânticas e contextuais anteriores.
-- A tradução continua parcial; `PRESS A BUTTON` permanece em inglês.
+Compatível com **Pokémon Pokopia 1.0.4**.
 
-## Exemplos no jogo
+## Traduções no mod
 
-Capturas de tela da tradução em uso:
+| Conteúdo | Total |
+| --- | ---: |
+| Entradas textuais traduzidas | **30.826** |
+| Imagens/texturas traduzidas | **36** |
 
-**Pedidos do Ermo Ressequido**
+O total textual conta entradas do jogo, incluindo repetições e variantes de nomes, singular e plural. Não soma novamente as revisões da mesma entrada nem inclui a adaptação de unidades de medida.
 
-![Quadro de pedidos do Ermo Ressequido em português](docs/screenshots/pedidos-ermo-ressequido.png)
+## Imagens de exemplo
 
-**Diálogo com Hitmonchan**
+![Coleção de carimbos em português](docs/previews/v0.0.6/colecao-carimbos.png)
 
-![Conversa de Hitmonchan com Ditto em português](docs/screenshots/dialogo-hitmonchan.png)
+![Culinária em português](docs/previews/v0.0.6/culinaria.png)
 
-**Tutorial: alcançando lugares altos**
+![Desafios diários em português](docs/previews/v0.0.6/desafios-diarios.png)
 
-![Tutorial sobre alcançar lugares altos e controles traduzidos](docs/screenshots/tutorial-lugares-altos.png)
-
-**Menu de pedidos**
-
-![Menu de pedidos e mapa do Ermo Ressequido em português](docs/screenshots/menu-pedidos.png)
-
-## Arquivos do ZIP
-
-- `romfs/LD_C0_R.BIN` — tabela de textos traduzidos.
-- `romfs/LI_C0_R.IDX` — índice correspondente; deve ficar junto do arquivo de textos.
+![Inventário e banco de tronco em português](docs/previews/v0.0.6/inventario-banco-tronco.png)
 
 ## Instalação
 
 1. Feche o jogo. O emulador pode continuar aberto se o jogo não estiver rodando.
-2. Faça backup dos arquivos correspondentes no update 327680.
-3. Extraia o ZIP no mod RomFS do update 327680, preservando a árvore `romfs`. Na instalação manual, substitua os arquivos correspondentes dentro da pasta `romfs` do update.
-4. Mantenha `LD_C0_R.BIN` e `LI_C0_R.IDX` juntos e deixe o idioma do jogo em inglês.
+2. Faça backup dos arquivos correspondentes no RomFS do update **327680**.
+3. Extraia o ZIP da tradução na pasta do mod RomFS, preservando a estrutura `romfs`. Na instalação manual, copie o conteúdo de `romfs` para a pasta `romfs` do update, substituindo os arquivos correspondentes.
+4. Instale os pares de arquivos juntos:
+   - `romfs/LD_C0_R.BIN` e `romfs/LI_C0_R.IDX`.
+   - `romfs/motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb` e `romfs/motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata`.
+5. Mantenha o idioma do jogo em **inglês** para carregar os textos traduzidos e inicie o jogo novamente.
 
-Para voltar aos arquivos originais, restaure os backups feitos antes da instalação.
-
-## Aviso
-
-Projeto comunitário não oficial. Pokémon e os arquivos originais do jogo pertencem aos respectivos detentores. O pacote contém apenas arquivos do patch; mantenha uma cópia legal do jogo e dos arquivos originais.
+Para desinstalar, remova o mod ou, se fez a substituição manual, restaure os backups originais.

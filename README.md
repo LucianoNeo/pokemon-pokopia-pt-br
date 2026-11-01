@@ -11,7 +11,7 @@ O projeto mantém patches separados para as versões **1.0.4** e **2.0.1** do jo
 | Versão do jogo | Update | Disponibilidade |
 | --- | --- | --- |
 | **1.0.4** | `327680` | Finalizada |
-| **2.0.1** | `655360` | Tradução textual parcial: **96,8%** |
+| **2.0.1** | `655360` | Tradução textual concluída: **100% do catálogo em inglês**; revisão manual pendente |
 
 ⭐ Antes de baixar, dê uma estrela no [repositório](https://github.com/LucianoNeo/pokemon-pokopia-pt-br) para apoiar o projeto.
 
@@ -19,7 +19,7 @@ O projeto mantém patches separados para as versões **1.0.4** e **2.0.1** do jo
 
 [**Baixar tradução PT-BR 2.0.0 — jogos 1.0.4 e 2.0.1 (ZIP)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.0.0/Pokemon-Pokopia-PT-BR-v2.0.0.zip)
 
-O pacote inclui as duas versões em pastas separadas. Na **2.0.1**, ainda há **1.134 entradas textuais pendentes**. A estrutura dos arquivos foi conferida, mas o funcionamento no jogo ainda precisa ser testado.
+O pacote publicado da release 2.0.0 inclui as duas versões em pastas separadas e ainda é parcial para a **2.0.1**. **Nesta branch**, a tradução dos textos em inglês catalogados está concluída, preservando nomes oficiais, vocalizações e comandos. O complemento aguarda revisão manual e teste no jogo; ainda não há uma nova release publicada.
 
 ### Estrutura do pacote com as duas versões
 
@@ -52,7 +52,7 @@ Instale **somente a pasta correspondente à versão do seu jogo**. Os arquivos d
 | Versão do jogo | Entradas textuais traduzidas | Imagens/texturas traduzidas |
 | --- | ---: | ---: |
 | **1.0.4** | **30.826** | **36** |
-| **2.0.1** | **34.781** — 96,8% | **40** |
+| **2.0.1** | **100% do catálogo textual em inglês** | **40** |
 
 ## Imagens de exemplo
 

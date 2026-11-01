@@ -1,2 +1,1 @@
-romfs/LD_C0_R.BIN filter=lfs diff=lfs merge=lfs -text
-romfs/motor_asset_re/KIDS_PLATFORM_OUNCE/0x00011c54.fdata filter=lfs diff=lfs merge=lfs -text
+*/romfs/LD_C0_R.BIN filter=lfs diff=lfs merge=lfs -text

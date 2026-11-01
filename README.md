@@ -2,24 +2,57 @@
 
 ## Sobre o projeto
 
-Tradução comunitária não oficial de **Pokémon Pokopia 1.0.4** para português brasileiro, por **LucianoNeo**, feita com auxílio de inteligência artificial e revisão manual.
+Tradução comunitária não oficial de **Pokémon Pokopia** para português brasileiro, por **LucianoNeo**, feita com auxílio de inteligência artificial e revisão manual.
 
-**Versão do mod: 1.0.0 — tradução finalizada para o jogo 1.0.4.** O patch é instalado no RomFS do update **327680**. Os nomes dos golpes permanecem em inglês.
+O projeto mantém patches separados para as versões **1.0.4** e **2.0.1** do jogo. Os nomes dos golpes permanecem em inglês.
+
+**Versão do mod: 2.0.0.**
+
+| Versão do jogo | Update | Disponibilidade |
+| --- | --- | --- |
+| **1.0.4** | `327680` | Finalizada |
+| **2.0.1** | `655360` | Tradução textual parcial: **96,8%**; teste no jogo pendente |
 
 ⭐ Antes de baixar, dê uma estrela no [repositório](https://github.com/LucianoNeo/pokemon-pokopia-pt-br) para apoiar o projeto.
 
 ## Download
 
-[**Baixar tradução PT-BR 1.0.0 (ZIP)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v1.0.0/Pokemon-Pokopia-PT-BR-v1.0.0.zip)
+[**Baixar tradução PT-BR 2.0.0 — jogos 1.0.4 e 2.0.1 (ZIP)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.0.0/Pokemon-Pokopia-PT-BR-v2.0.0.zip)
 
-Compatível com **Pokémon Pokopia 1.0.4**.
+O pacote inclui as duas versões em pastas separadas. Na **2.0.1**, ainda há **1.134 entradas textuais pendentes**. A estrutura dos arquivos foi conferida, mas o funcionamento no jogo ainda precisa ser testado.
+
+### Estrutura do pacote com as duas versões
+
+Cada versão tem sua própria pasta dentro do mesmo ZIP:
+
+```text
+README.md
+1.0.4/
+└── romfs/
+    ├── LD_C0_R.BIN
+    ├── LI_C0_R.IDX
+    └── motor_asset_re/
+        └── KIDS_PLATFORM_OUNCE/
+            ├── root.rdb
+            └── 0x4b13d561.fdata
+2.0.1/
+└── romfs/
+    ├── LD_C0_R.BIN
+    ├── LI_C0_R.IDX
+    └── motor_asset_re/
+        └── KIDS_PLATFORM_OUNCE/
+            ├── root.rdb
+            └── 0x4b13d561.fdata
+```
+
+Instale **somente a pasta correspondente à versão do seu jogo**. Os arquivos das duas versões não devem ser misturados. O ZIP já publicado do mod 1.0.0 mantém a estrutura anterior, com `romfs` diretamente na raiz.
 
 ## Traduções no mod
 
-| Conteúdo | Total |
-| --- | ---: |
-| Entradas textuais traduzidas | **30.826** |
-| Imagens/texturas traduzidas | **36** |
+| Versão do jogo | Entradas textuais traduzidas | Imagens/texturas traduzidas |
+| --- | ---: | ---: |
+| **1.0.4** | **30.826** | **36** |
+| **2.0.1** | **34.781** — 96,8% | **40** |
 
 O total textual conta entradas do jogo, incluindo repetições e variantes de nomes, singular e plural. Não soma novamente as revisões da mesma entrada nem inclui a adaptação de unidades de medida.
 
@@ -36,8 +69,11 @@ O total textual conta entradas do jogo, incluindo repetições e variantes de no
 ## Instalação
 
 1. Feche o jogo. O emulador pode continuar aberto se o jogo não estiver rodando.
-2. Faça backup dos arquivos correspondentes no RomFS do update **327680**.
-3. Extraia o ZIP da tradução na pasta do mod RomFS, preservando a estrutura `romfs`. Na instalação manual, copie o conteúdo de `romfs` para a pasta `romfs` do update, substituindo os arquivos correspondentes.
+2. Confira a versão do jogo e escolha a pasta correspondente no ZIP:
+   - Jogo **1.0.4**: `1.0.4/romfs`, para o update **327680**.
+   - Jogo **2.0.1**: `2.0.1/romfs`, para o update **655360**.
+   - No ZIP anterior do mod **1.0.0**, use a pasta `romfs` da raiz, exclusiva da **1.0.4**.
+3. Faça backup dos arquivos correspondentes no RomFS do update escolhido. Copie apenas a pasta `romfs` da versão selecionada para a pasta do mod. Na instalação manual, copie o conteúdo dessa `romfs` para a `romfs` do update, substituindo os arquivos correspondentes. As pastas `1.0.4` e `2.0.1` servem para organizar o ZIP; não são copiadas para dentro do RomFS.
 4. Instale os pares de arquivos juntos:
    - `romfs/LD_C0_R.BIN` e `romfs/LI_C0_R.IDX`.
    - `romfs/motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb` e `romfs/motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata`.

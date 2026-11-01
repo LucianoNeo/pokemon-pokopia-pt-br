@@ -11,7 +11,7 @@ O projeto mantém patches separados para as versões **1.0.4** e **2.0.1** do jo
 | Versão do jogo | Update | Disponibilidade |
 | --- | --- | --- |
 | **1.0.4** | `327680` | Finalizada |
-| **2.0.1** | `655360` | Tradução textual parcial: **96,8%**; teste no jogo pendente |
+| **2.0.1** | `655360` | Tradução textual parcial: **96,8%** |
 
 ⭐ Antes de baixar, dê uma estrela no [repositório](https://github.com/LucianoNeo/pokemon-pokopia-pt-br) para apoiar o projeto.
 
@@ -53,8 +53,6 @@ Instale **somente a pasta correspondente à versão do seu jogo**. Os arquivos d
 | --- | ---: | ---: |
 | **1.0.4** | **30.826** | **36** |
 | **2.0.1** | **34.781** — 96,8% | **40** |
-
-O total textual conta entradas do jogo, incluindo repetições e variantes de nomes, singular e plural. Não soma novamente as revisões da mesma entrada nem inclui a adaptação de unidades de medida.
 
 ## Imagens de exemplo
 

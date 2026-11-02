@@ -1,6 +1,6 @@
 ﻿id,original_en,antes,depois,status
 b01955:r00009:f00,"<oneline><$facial(1,4)><$voicel(1,10)><$comeff(1,1)><$motion(1,801)>Heyyy! Great to see ya again, <$cdef(27)><pname;0></color>!<br>This<slide><br>legit<slide><br>makes<slide><br>me<slide><br>so happy!","<oneline><$facial(1,4)><$voicel(1,10)><$comeff(1,1)><$motion(1,801)>Olá! Que bom ver você de novo, <$cdef(27)><pname;0></color>! Este<slide><br>legítimo<slide><br>me deixa<slide><br><slide><br>tão feliz!","<oneline><$facial(1,4)><$voicel(1,10)><$comeff(1,1)><$motion(1,801)>Olá! Que bom ver você de novo, <$cdef(27)><pname;0></color>! Isso<slide><br>me deixa<slide><br>muito<slide><br>feliz<slide><br>de verdade!",aguardando_revisao_no_jogo
-b01973:r00336:f00,"<$voicel(1,8)><$emotion(1,49)>I’ve got this.","<$voicel(1,8)><$emotion(1,49)>Eu tenho isso.","<$voicel(1,8)><$emotion(1,49)>Deixa comigo.",aguardando_revisao_no_jogo
+b01973:r00336:f00,"<$voicel(1,8)><$emotion(1,49)>I’ve got this.","<$voicel(1,8)><$emotion(1,49)>Entendi!","<$voicel(1,8)><$emotion(1,49)>Deixa comigo.",aguardando_revisao_no_jogo
 b01991:r00611:f00,"<$voicel(1,7)><$emotion(1,8)>Really?! Great! I’ll do my best!","<$voicel(1,7)><$emotion(1,8)>timo, farei o meu melhor!","<$voicel(1,7)><$emotion(1,8)>Sério?! Ótimo! Vou dar o meu melhor!",aguardando_revisao_no_jogo
 b01991:r00623:f00,"<$emotion(1,8)><$voicel(1,9)>Really...? Oh, great! I’ll do my best!","<$emotion(1,8)><$voicel(1,9)>- timo, farei o meu melhor!","<$emotion(1,8)><$voicel(1,9)>Sério...? Ah, ótimo! Vou dar o meu melhor!",aguardando_revisao_no_jogo
 b02000:r00403:f00,"<$emotion(1,38)><$voicel(1,7)>That right? Great! I’ll tag along with ya, then!","<$emotion(1,38)><$voicel(1,7)>- timo, vou te acompanhar.","<$emotion(1,38)><$voicel(1,7)>É mesmo? Ótimo! Então vou com você!",aguardando_revisao_no_jogo
@@ -9,21 +9,15 @@ b02270:r00191:f00,You’re welcome,Você é bem-vindo.,De nada,aguardando_revisa
 b02270:r00777:f00,Great job!,timo trabalho!,Ótimo trabalho!,aguardando_revisao_no_jogo
 b02450:r00010:f00,"<oneline><$emotion(2,38)><$voicel(2,9)>Great job, <$cdef(27)><pname;0></color>! You found<br>the spring!<clear><br><$comeff(2,6)><$facial(2,1)><$motion(2,805)><$voicel(2,7)>That should help make this area a little bit more humid!","<oneline><$emotion(2,38)><$voicel(2,9)>timo trabalho,<$cdef(27)><pname;0></color> você encontrou<br> a primavera!<clear><br><$comeff(2,6)><$facial(2,1)><$motion(2,805)><$voicel(2,7)>Isso deve ajudar a tornar esta área um pouco mais úmida!","<oneline><$emotion(2,38)><$voicel(2,9)>Muito bem, <$cdef(27)><pname;0></color>! Você encontrou<br>a nascente!<clear><br><$comeff(2,6)><$facial(2,1)><$motion(2,805)><$voicel(2,7)>Isso deve ajudar a tornar esta área um pouco mais úmida!",aguardando_revisao_no_jogo
 b02981:r00065:f00,"<$voicel(4,5)><$emotion(4,1)>So you’ve gone and learned <$cdef(27)><$sklfull(10)></color>, have ya? Great! All<br>right then—I’m ready to teach ya <$cdef(27)>Waterfall</color>, as promised!","<$voicel(4,5)><$emotion(4,1)>Então você foi e aprendeu, tem<$cdef(27)><$sklfull(10)></color>? timo! Tudo bem, então<br> - Estou pronto para te ensinar <$cdef(27)>Waterfall</color>, como prometido!","<$voicel(4,5)><$emotion(4,1)>Então você aprendeu <$cdef(27)><$sklfull(10)></color>? Ótimo!<br>Vou te ensinar <$cdef(27)>Waterfall</color>, como prometido!",aguardando_revisao_no_jogo
-b03080:r00172:f00,"<$comeff(1,20)><$motionoff(1,804)><$voicel(1,9)>EUREKA, I HAVE IT! Inspiration courses through my mind!<br>Nay... Through the very fiber of my being!","<$comeff(1,20)><$motionoff(1,804)><$voicel(1,9)>EUREKA, eu tenho isso, cursos de inspiração através da <br>minha mente, não, através da fibra do meu ser!","<$comeff(1,20)><$motionoff(1,804)><$voicel(1,9)>EUREKA, JÁ SEI! A inspiração toma conta da minha mente!<br>Não... De cada fibra do meu ser!",aguardando_revisao_no_jogo
 b03089:r00037:f00,"<$voicel(1,9)>Last one... How’s THIS?","<$voicel(1,9)>ltimo... como é isso?","<$voicel(1,9)>O último... Que tal ESTE?",aguardando_revisao_no_jogo
 b03089:r00070:f00,"<$voicel(1,9)>Last one... How’s THIS?","<$voicel(1,9)>ltimo... como é isso?","<$voicel(1,9)>O último... Que tal ESTE?",aguardando_revisao_no_jogo
 b03116:r00000:f00,"<$emotion(2,18)><$voicel(2,3)>*sigh* Great. Just great... I don’t wanna do anything...<clear><br><$emotion(2,41)><$voicel(2,2)>I’m completely, utterly burned out...","<$emotion(2,18)><$voicel(2,3)>timo, eu não quero fazer nada.<clear><br><$emotion(2,41)><$voicel(2,2)>Estou completamente, completamente queimado...","<$emotion(2,18)><$voicel(2,3)>*suspiro* Ótimo. Que ótimo... Não quero fazer nada...<clear><br><$emotion(2,41)><$voicel(2,2)>Estou sem energia nenhuma...",aguardando_revisao_no_jogo
-b03287:r00222:f00,"<$comeff(1,14)><$motion(1,666)><$voicel(1,5)>Hmmm... HMMMmmmMMM... Oho! I’ve got it!","<$comeff(1,14)><$motion(1,666)><$voicel(1,5)>Hmmmmmmmmmmm, oo, eu tenho isso!","<$comeff(1,14)><$motion(1,666)><$voicel(1,5)>Hmmm... HMMMMmmm... Oho! Já sei!",aguardando_revisao_no_jogo
 b03296:r00048:f00,"<$comeff(1,10)><$facial(1,4)><$motion(1,806)><$voicel(1,7)>Everyone’s always squishin’ my cheeks and stuff...<clear><br><$facial(1,7)><$motion(1,204)><$voicel(1,3)>Sometimes it gets to be a bit much... <$comeff(1,7)><$facial(1,9)><$motion(1,802)><$voicel(1,4)>I guess I’m just<br>too popular!<clear><br><$comeff(1,3)><$facial(1,4)><$motion(1,803)><$voicel(1,5)>YOU’RE welcome to squish ’em, if you want!","<$comeff(1,10)><$facial(1,4)><$motion(1,806)><$voicel(1,7)>Todo mundo está sempre esguichando minhas bochechas e coisas assim...<clear><br>Às<$facial(1,7)><$motion(1,204)><$voicel(1,3)> vezes é um pouco demais... acho<$comeff(1,7)><$facial(1,9)><$motion(1,802)><$voicel(1,4)> que sou muito<br> popular!<clear><br><$comeff(1,3)><$facial(1,4)><$motion(1,803)><$voicel(1,5)>Você é bem-vindo para esmagá-los, se quiser!","<$comeff(1,10)><$facial(1,4)><$motion(1,806)><$voicel(1,7)>Todo mundo vive apertando minhas bochechas...<clear><br><$facial(1,7)><$motion(1,204)><$voicel(1,3)>Às vezes é um pouco demais... <$comeff(1,7)><$facial(1,9)><$motion(1,802)><$voicel(1,4)>Acho que sou<br>popular demais!<clear><br><$comeff(1,3)><$facial(1,4)><$motion(1,803)><$voicel(1,5)>Mas VOCÊ pode apertar, se quiser!",aguardando_revisao_no_jogo
 b03863:r00188:f00,"<$voicel(1,3)><$emotion(1,17)>Ugh, great... Now I’M the one who got scared.","<$voicel(1,3)><$emotion(1,17)>timo, agora sou eu que fiquei com medo.","<$voicel(1,3)><$emotion(1,17)>Ótimo, agora sou eu que fiquei com medo.",aguardando_revisao_no_jogo
 b03863:r00209:f00,"<$comeff(2,9)><$motion(2,801)><$voicel(2,7)>Nice! I didn’t think you heard me.<clear><br><$comeff(2,10)><$motion(2,803)><$voicel(2,9)>Anyway, let’s go play!","<$comeff(2,9)><$motion(2,801)><$voicel(2,7)>Ótimo! Eu não tinha pensado que você tinha me ouvido. <clear><br><$comeff(2,10)><$motion(2,803)><$voicel(2,9)>De qualquer forma, vamos brincar!","<$comeff(2,9)><$motion(2,801)><$voicel(2,7)>Ótimo! Achei que você não tinha me ouvido!<clear><br><$comeff(2,10)><$motion(2,803)><$voicel(2,9)>De qualquer forma, vamos brincar!",aguardando_revisao_no_jogo
 b04178:r00003:f00,Awesome!,timo!,Ótimo!,aguardando_revisao_no_jogo
-b04178:r00079:f00,I’ve got this!,Eu tenho isso!,Deixa comigo!,aguardando_revisao_no_jogo
-b04187:r00079:f00,I’ve got this!,Eu tenho isso!,Deixa comigo!,aguardando_revisao_no_jogo
-b04205:r00079:f00,I’ve got this. ♪,Eu tenho isso.,Deixa comigo. ♪,aguardando_revisao_no_jogo
 b04232:r00108:f00,Great work.,timo trabalho.,Ótimo trabalho.,aguardando_revisao_no_jogo
 b04250:r00079:f00,I-I’ve got this...,Eu tenho isso...,D-deixa comigo...,aguardando_revisao_no_jogo
-b04628:r00002:f00,Table (any),Tabela (qualquer),Mesa (qualquer),aguardando_revisao_no_jogo
 b04628:r00005:f00,Post (any),Postar (qualquer),Poste (qualquer),aguardando_revisao_no_jogo
 b04628:r00009:f00,Table (large),Tabela (grande),Mesa (grande),aguardando_revisao_no_jogo
 b04628:r00015:f00,Castform weather charm (sun),Charme do tempo de Castform (sol),Amuleto climático de Castform (sol),aguardando_revisao_no_jogo
@@ -44,7 +38,6 @@ b04637:r01249:f00,Its blades spin round and round when powered on.<br>Great for 
 b04637:r01578:f00,"Great for reaching high places. Connect them<br>vertically, then climb straight up.",timo para alcançar lugares altos. Conecte-os<br> verticalmente e suba em linha reta.,Ótimo para alcançar lugares altos. Conecte-os<br> verticalmente e suba em linha reta.,aguardando_revisao_no_jogo
 b04637:r02351:f00,“Table” may be an overly generous description of this<br>big slab of stone atop a pile of hay.,"""Tabela"" pode ser uma descrição muito generosa desta grande <br>laje de pedra em cima de uma pilha de feno.",Chamar de “mesa” esta grande laje de pedra sobre<br>uma pilha de feno talvez seja exagero.,aguardando_revisao_no_jogo
 b04655:r00011:f00,Craft,Artesanato,Criar,aguardando_revisao_no_jogo
-b04655:r00013:f00,Put Away,Separem-se.,Guardar,aguardando_revisao_no_jogo
 b04655:r00035:f00,Sit,Sente-se.,Sentar,aguardando_revisao_no_jogo
 b04655:r00039:f00,Eat,Coma.,Comer,aguardando_revisao_no_jogo
 b04655:r00042:f00,Inhale,Inspire.,Inalar,aguardando_revisao_no_jogo
@@ -60,27 +53,14 @@ b04655:r00101:f00,Suck Up Liquid,Chupe o líquido.,Sugar líquido,aguardando_rev
 b04655:r00103:f00,Take All,Leve tudo.,Pegar tudo,aguardando_revisao_no_jogo
 b04655:r00104:f00,Go Down,Desça.,Descer,aguardando_revisao_no_jogo
 b04655:r00113:f00,Turn Off,Desligue.,Desligar,aguardando_revisao_no_jogo
-b04655:r00114:f00,Put Away,Separem-se.,Guardar,aguardando_revisao_no_jogo
 b04655:r00118:f00,Wake Up,Acorde.,Acordar,aguardando_revisao_no_jogo
 b04655:r00133:f00,Let Go,Solte-me.,Soltar,aguardando_revisao_no_jogo
 b04655:r00136:f00,Return to Bag,Retorne ao saco.,Devolver à bolsa,aguardando_revisao_no_jogo
 b04655:r00139:f00,Report,Relatório,Informar,aguardando_revisao_no_jogo
 b04655:r00141:f00,Go Back Home,Volte para casa.,Voltar para casa,aguardando_revisao_no_jogo
-b04655:r00142:f00,Put in Bag,Coloque no saco.,Guardar na bolsa,aguardando_revisao_no_jogo
 b04655:r00143:f00,Grab,Agarre,Agarrar,aguardando_revisao_no_jogo
-b04655:r00150:f00,Jump,Salta.,Pular,aguardando_revisao_no_jogo
-b04655:r00152:f00,Slow Down,Devagar.,Desacelerar,aguardando_revisao_no_jogo
-b04655:r00153:f00,Exchange for Coins,Troca de moedas,Trocar por moedas,aguardando_revisao_no_jogo
-b04655:r00156:f00,Tilt Camera,Câmera de inclinação,Inclinar câmera,aguardando_revisao_no_jogo
-b04655:r00158:f00,Place,Lugar,Colocar,aguardando_revisao_no_jogo
-b04655:r00160:f00,Always Display Handy Bag,Sempre exiba Bolsa prática,Sempre mostrar a bolsa prática,aguardando_revisao_no_jogo
-b04655:r00161:f00,Hide Handy Bag,Esconder Bolsa prática,Ocultar bolsa prática,aguardando_revisao_no_jogo
-b04655:r00163:f00,Change Moves,Mudança de Movimentos,Trocar golpes,aguardando_revisao_no_jogo
-b04655:r00164:f00,Make Request to All,Faça um pedido a todos,Fazer um pedido a todos,aguardando_revisao_no_jogo
 b04655:r00165:f00,Show Link Code,Mostrar código de ligação,Mostrar código de conexão,aguardando_revisao_no_jogo
 b04655:r00166:f00,Hide Link Code,Ocultar código de link,Ocultar código de conexão,aguardando_revisao_no_jogo
-b04655:r00170:f00,Pause,Pausa,Pausar,aguardando_revisao_no_jogo
-b04655:r00175:f00,Register,Registre-se,Registrar,aguardando_revisao_no_jogo
 b04655:r00179:f00,Go Back Home,Volte para casa.,Voltar para casa,aguardando_revisao_no_jogo
 b04655:r00184:f00,Light,Luz,Acender,aguardando_revisao_no_jogo
 b04655:r00196:f00,Mode Change: Replace,Alteração de Modo: Substitua,Mudar modo: Substituir,aguardando_revisao_no_jogo
@@ -90,9 +70,6 @@ b04655:r00202:f00,Get On,Vamos lá.,Subir,aguardando_revisao_no_jogo
 b04655:r00206:f00,Take All,Leve tudo.,Pegar tudo,aguardando_revisao_no_jogo
 b04655:r00209:f00,Rest,Descanse.,Descansar,aguardando_revisao_no_jogo
 b04655:r00211:f00,Cook,Cozinhe.,Cozinhar,aguardando_revisao_no_jogo
-b04655:r00213:f00,Number to Place: 1,Número para lugar: 1,Quantidade a colocar: 1,aguardando_revisao_no_jogo
-b04655:r00214:f00,Number to Place: 4,Número para lugar: 4,Quantidade a colocar: 4,aguardando_revisao_no_jogo
-b04655:r00215:f00,Number to Place: 9,Número para lugar: 9,Quantidade a colocar: 9,aguardando_revisao_no_jogo
 b04655:r00220:f00,Turn Off,Desligue.,Desligar,aguardando_revisao_no_jogo
 b04655:r00222:f00,Get In,Entre.,Entrar,aguardando_revisao_no_jogo
 b04655:r00228:f00,Call Leader,Ligar para o Líder,Chamar líder,aguardando_revisao_no_jogo
@@ -100,9 +77,4 @@ b04655:r00230:f00,Go Up,Suba.,Subir,aguardando_revisao_no_jogo
 b04655:r00231:f00,Go Down,Desça.,Descer,aguardando_revisao_no_jogo
 b04655:r00232:f00,Run,Corra.,Correr,aguardando_revisao_no_jogo
 b04655:r00233:f00,Bag,Saco.,Bolsa,aguardando_revisao_no_jogo
-b04655:r00241:f00,Put Away,Separem-se.,Guardar,aguardando_revisao_no_jogo
-b04997:r00004:f00,Great,timo.,Ótimo.,aguardando_revisao_no_jogo
 b05069:r00245:f00,Awesome!,timo!,Ótimo!,aguardando_revisao_no_jogo
-b05069:r00503:f00,I’ve got it!,Eu tenho isso!,Já sei!,aguardando_revisao_no_jogo
-b05069:r01018:f00,I’ve got it!,Eu tenho isso!,Já sei!,aguardando_revisao_no_jogo
-b05141:r00002:f00,Great,timo.,Ótimo.,aguardando_revisao_no_jogo

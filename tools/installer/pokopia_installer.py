@@ -18,13 +18,12 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.2.1"
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.1.0.zip"
+APP_VERSION = "2.2.5"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.2.5.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.1.0/Pokemon-Pokopia-PT-BR-v2.1.0.zip"
+    "v2.2.5/Pokemon-Pokopia-PT-BR-v2.2.5.zip"
 )
-PACKAGE_SHA256 = "eead278132fabead5e5cb79b93676938c58c0622a3b41e648f56b995a42a857c"
 
 ROMFS_FILES = (
     "LD_C0_R.BIN",
@@ -68,11 +67,31 @@ VERSIONS = {
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "61ec376dc272d65c21dc93d8e91502b796d81e6ddcaae564670340485da197da",
         },
         "hashes": {
-            "LD_C0_R.BIN": "7982642fe324a939755abe0f095846dea0ac366f8c9a1c799c61c53f628ed249",
-            "LI_C0_R.IDX": "52c517e6d52807ae853542eb1217c733e62f25f01316713657a53277033b1335",
+            "LD_C0_R.BIN": "d15179d9150f0797caabc761171660bd1c33e592e3f6e765324fa8d52142e5d1",
+            "LI_C0_R.IDX": "e7616f4db262641c55dab948e6fb7cb8fd28812c1977e5fcdcd93a2173c9faf9",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
         },
+        "previous_hashes": [
+            {
+                "LD_C0_R.BIN": "f2046a44fd1125d7ee505bb8411d5c2d0c2e4ef7017f2b59cfa76e6f3f1e35c1",
+                "LI_C0_R.IDX": "a8b067576a1384d20e3812edd12686f64f8658ea03a8641dae17577993bff896",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
+            },
+            {
+                "LD_C0_R.BIN": "e9f0fa4a622f619131902df1f6db7c50a2b8ae4f4bcaca5a8f00845afd1e854a",
+                "LI_C0_R.IDX": "04098c36f84243c83fb063706011338e384ec5dc1ee6732452899d562160bc35",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
+            },
+            {
+                "LD_C0_R.BIN": "7982642fe324a939755abe0f095846dea0ac366f8c9a1c799c61c53f628ed249",
+                "LI_C0_R.IDX": "52c517e6d52807ae853542eb1217c733e62f25f01316713657a53277033b1335",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
+            }
+        ],
     },
 }
 
@@ -144,9 +163,15 @@ def inspect_romfs(path: Path) -> dict | None:
         )
         if output_sizes_match:
             try:
-                output_hashes_match = all(
-                    sha256_file(paths[relative]) == expected_hash
-                    for relative, expected_hash in signature["hashes"].items()
+                actual_hashes = {
+                    relative: sha256_file(candidate)
+                    for relative, candidate in paths.items()
+                }
+                output_hashes_match = any(
+                    actual_hashes == expected_hashes
+                    for expected_hashes in [
+                        signature["hashes"], *signature.get("previous_hashes", [])
+                    ]
                 )
             except OSError:
                 return None
@@ -259,6 +284,24 @@ def is_valid_bundled_package(root: Path) -> bool:
         except OSError:
             return False
     return found_version
+
+
+def is_valid_zip_package(path: Path) -> bool:
+    """Verify the payload hashes; the ZIP also contains this executable."""
+    try:
+        with zipfile.ZipFile(path) as archive:
+            names = archive.namelist()
+            for version, signature in VERSIONS.items():
+                for relative, expected_hash in signature["hashes"].items():
+                    member = f"{version}/romfs/{relative}"
+                    if names.count(member) != 1:
+                        return False
+                    with archive.open(member) as stream:
+                        if hashlib.file_digest(stream, "sha256").hexdigest() != expected_hash:
+                            return False
+    except (OSError, ValueError, zipfile.BadZipFile, KeyError, RuntimeError, EOFError):
+        return False
+    return True
 
 
 @contextmanager
@@ -526,7 +569,7 @@ class Installer:
         for candidate in (adjacent, cached):
             if candidate.is_file():
                 self.events.put(("status", "Verificando o pacote de tradução…"))
-                if sha256_file(candidate) == PACKAGE_SHA256:
+                if is_valid_zip_package(candidate):
                     return candidate
                 if candidate == cached:
                     try:
@@ -536,7 +579,6 @@ class Installer:
 
         cached.parent.mkdir(parents=True, exist_ok=True)
         partial = cached.with_suffix(cached.suffix + ".part")
-        digest = hashlib.sha256()
         request = urllib.request.Request(
             PACKAGE_URL,
             headers={"User-Agent": f"Pokopia-PTBR-Installer/{APP_VERSION}"},
@@ -552,15 +594,14 @@ class Installer:
                         if not block:
                             break
                         output.write(block)
-                        digest.update(block)
                         downloaded += len(block)
                         percent = int(downloaded * 100 / total) if total else 0
                         self.events.put(
                             ("progress", percent, downloaded, total)
                         )
-            if digest.hexdigest() != PACKAGE_SHA256:
+            if not is_valid_zip_package(partial):
                 raise ValueError(
-                    "O SHA-256 do pacote baixado não corresponde à release oficial."
+                    "Os arquivos do pacote baixado não correspondem à release oficial."
                 )
             os.replace(partial, cached)
             self.events.put(("progress", 100, cached.stat().st_size, cached.stat().st_size))

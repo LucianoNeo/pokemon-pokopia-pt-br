@@ -18,11 +18,11 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.2.4"
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.2.4.zip"
+APP_VERSION = "2.2.5"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.2.5.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.2.4/Pokemon-Pokopia-PT-BR-v2.2.4.zip"
+    "v2.2.5/Pokemon-Pokopia-PT-BR-v2.2.5.zip"
 )
 
 ROMFS_FILES = (
@@ -67,8 +67,8 @@ VERSIONS = {
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "61ec376dc272d65c21dc93d8e91502b796d81e6ddcaae564670340485da197da",
         },
         "hashes": {
-            "LD_C0_R.BIN": "d86fa97aeba240acdf09a7e010f2c1c7f4f27eb53b3a2a52676c5da34adb8f41",
-            "LI_C0_R.IDX": "96fbda9de528d81527c574de273bfe1dc6908b34e5494468f11711d50c3d5948",
+            "LD_C0_R.BIN": "d15179d9150f0797caabc761171660bd1c33e592e3f6e765324fa8d52142e5d1",
+            "LI_C0_R.IDX": "e7616f4db262641c55dab948e6fb7cb8fd28812c1977e5fcdcd93a2173c9faf9",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
         },

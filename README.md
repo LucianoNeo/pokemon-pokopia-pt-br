@@ -4,7 +4,7 @@
 
 Tradução comunitária não oficial de **Pokémon Pokopia** para português brasileiro, por **LucianoNeo**, feita com auxílio de inteligência artificial e revisão manual. O mod traz versões separadas para os jogos **1.0.4** e **2.0.1** (incluindo a base **2.0.1a**). Os nomes dos golpes permanecem em inglês por escolha do projeto.
 
-**Versão do mod: 2.2.1**
+**Versão do mod: 2.2.2**
 
 | Versão do jogo | Update | Cobertura de localização |
 | --- | --- | --- |
@@ -15,7 +15,7 @@ Tradução comunitária não oficial de **Pokémon Pokopia** para português bra
 
 ## Download
 
-[**Baixar a tradução PT-BR v2.2.1 — jogos 1.0.4 e 2.0.1 (ZIP com instalador)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.2.1/Pokemon-Pokopia-PT-BR-v2.2.1.zip)
+[**Baixar a tradução PT-BR v2.2.2 — jogos 1.0.4 e 2.0.1 (ZIP com instalador)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.2.2/Pokemon-Pokopia-PT-BR-v2.2.2.zip)
 
 ## Conteúdo traduzido
 
@@ -32,7 +32,7 @@ Cada versão tem sua própria pasta dentro do ZIP. Instale somente a corresponde
 
 ```text
 README.md
-Pokemon-Pokopia-PT-BR-Installer-v2.2.1.exe
+Pokemon-Pokopia-PT-BR-Installer-v2.2.2.exe
 1.0.4/
 └── romfs/
     ├── LD_C0_R.BIN
@@ -66,7 +66,7 @@ Pokemon-Pokopia-PT-BR-Installer-v2.2.1.exe
 ### Instalação automática
 
 1. Extraia o ZIP para uma pasta.
-2. Execute `Pokemon-Pokopia-PT-BR-Installer-v2.2.1.exe`.
+2. Execute `Pokemon-Pokopia-PT-BR-Installer-v2.2.2.exe`.
 3. Selecione a pasta do jogo, do update ou de `romfs`. O instalador identifica a versão e usa os arquivos incluídos neste pacote.
 4. Feche o jogo antes de aplicar a tradução. O emulador pode continuar aberto se o jogo não estiver rodando. O instalador guarda os arquivos substituídos em `%LOCALAPPDATA%\PokemonPokopiaPTBR\backups`.
 

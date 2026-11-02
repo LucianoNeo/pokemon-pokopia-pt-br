@@ -18,7 +18,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.2.0"
+APP_VERSION = "2.2.1"
 PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.1.0.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
@@ -52,6 +52,21 @@ VERSIONS = {
         "idx_size": 393536,
         "rdb_size": 5752340,
         "fdata_size": 21896960,
+        # Original 2.0.1/2.0.1a RomFS files. The previous installer compared
+        # source files against translated output sizes, so clean installations
+        # were rejected before the patch could be applied.
+        "source_sizes": {
+            "LD_C0_R.BIN": 247317504,
+            "LI_C0_R.IDX": 393536,
+            "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": 5752340,
+            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": 264309,
+        },
+        "source_hashes": {
+            "LD_C0_R.BIN": "2ea76fd78d5d2c0111fc2e3d8258ed35faaad6a52420d7fdee7c8a2ed2122433",
+            "LI_C0_R.IDX": "86fb3fae4e3092594e45c350f7f12e4cbe4a53b513f07c1f38498f6ec988c0b1",
+            "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "47f715d98cbe8718ce0c5e51dd4666c6587796a51f72b904a76bde8d227be786",
+            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "61ec376dc272d65c21dc93d8e91502b796d81e6ddcaae564670340485da197da",
+        },
         "hashes": {
             "LD_C0_R.BIN": "7982642fe324a939755abe0f095846dea0ac366f8c9a1c799c61c53f628ed249",
             "LI_C0_R.IDX": "52c517e6d52807ae853542eb1217c733e62f25f01316713657a53277033b1335",
@@ -84,31 +99,63 @@ def sha256_file(path: Path) -> str:
 
 
 def inspect_romfs(path: Path) -> dict | None:
-    """Return a supported version only when all version signatures match."""
+    """Return a supported version when its source or translated files match."""
     paths = {relative: path / Path(relative) for relative in ROMFS_FILES}
     if not all(candidate.is_file() for candidate in paths.values()):
         return None
 
     try:
-        idx_size = paths["LI_C0_R.IDX"].stat().st_size
-        rdb_size = paths["motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb"].stat().st_size
-        fdata_size = paths[
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata"
-        ].stat().st_size
+        sizes = {
+            relative: candidate.stat().st_size
+            for relative, candidate in paths.items()
+        }
     except OSError:
         return None
 
     for version, signature in VERSIONS.items():
-        if (
-            idx_size == signature["idx_size"]
-            and rdb_size == signature["rdb_size"]
-            and fdata_size == signature["fdata_size"]
+        source_sizes = signature.get("source_sizes")
+        source_hashes = signature.get("source_hashes")
+        if source_sizes and source_hashes and all(
+            sizes.get(relative) == expected_size
+            for relative, expected_size in source_sizes.items()
         ):
-            return {
-                "version": version,
-                "update_id": signature["update_id"],
-                "path": path.resolve(),
-            }
+            try:
+                if all(
+                    sha256_file(paths[relative]) == expected_hash
+                    for relative, expected_hash in source_hashes.items()
+                ):
+                    return {
+                        "version": version,
+                        "update_id": signature["update_id"],
+                        "path": path.resolve(),
+                    }
+            except OSError:
+                return None
+
+        # The bundled hashes and sizes describe the translated output. Keep the
+        # legacy 1.0.4 size check because its original source fingerprint was
+        # not recorded; 2.0.1 must match exact source or output hashes.
+        output_sizes_match = (
+            sizes.get("LI_C0_R.IDX") == signature["idx_size"]
+            and sizes.get("motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb")
+            == signature["rdb_size"]
+            and sizes.get("motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata")
+            == signature["fdata_size"]
+        )
+        if output_sizes_match:
+            try:
+                output_hashes_match = all(
+                    sha256_file(paths[relative]) == expected_hash
+                    for relative, expected_hash in signature["hashes"].items()
+                )
+            except OSError:
+                return None
+            if output_hashes_match or version == "1.0.4":
+                return {
+                    "version": version,
+                    "update_id": signature["update_id"],
+                    "path": path.resolve(),
+                }
     return None
 
 

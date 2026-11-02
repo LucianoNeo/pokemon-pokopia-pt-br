@@ -18,11 +18,11 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.2.3"
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.2.3.zip"
+APP_VERSION = "2.2.4"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.2.4.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.2.3/Pokemon-Pokopia-PT-BR-v2.2.3.zip"
+    "v2.2.4/Pokemon-Pokopia-PT-BR-v2.2.4.zip"
 )
 
 ROMFS_FILES = (
@@ -67,12 +67,18 @@ VERSIONS = {
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "61ec376dc272d65c21dc93d8e91502b796d81e6ddcaae564670340485da197da",
         },
         "hashes": {
-            "LD_C0_R.BIN": "f2046a44fd1125d7ee505bb8411d5c2d0c2e4ef7017f2b59cfa76e6f3f1e35c1",
-            "LI_C0_R.IDX": "a8b067576a1384d20e3812edd12686f64f8658ea03a8641dae17577993bff896",
+            "LD_C0_R.BIN": "d86fa97aeba240acdf09a7e010f2c1c7f4f27eb53b3a2a52676c5da34adb8f41",
+            "LI_C0_R.IDX": "96fbda9de528d81527c574de273bfe1dc6908b34e5494468f11711d50c3d5948",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
         },
         "previous_hashes": [
+            {
+                "LD_C0_R.BIN": "f2046a44fd1125d7ee505bb8411d5c2d0c2e4ef7017f2b59cfa76e6f3f1e35c1",
+                "LI_C0_R.IDX": "a8b067576a1384d20e3812edd12686f64f8658ea03a8641dae17577993bff896",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
+            },
             {
                 "LD_C0_R.BIN": "e9f0fa4a622f619131902df1f6db7c50a2b8ae4f4bcaca5a8f00845afd1e854a",
                 "LI_C0_R.IDX": "04098c36f84243c83fb063706011338e384ec5dc1ee6732452899d562160bc35",

@@ -34,7 +34,7 @@ if ($LASTEXITCODE -ne 0) {
     throw "Não foi possível instalar o PyInstaller."
 }
 
-$name = "Pokemon-Pokopia-PT-BR-Installer-v2.5.0"
+$name = "Pokemon-Pokopia-PT-BR-Installer-v2.5.1"
 $workPath = Join-Path $buildRoot "work"
 $specPath = Join-Path $buildRoot "spec"
 New-Item -ItemType Directory -Force -Path $workPath, $specPath | Out-Null

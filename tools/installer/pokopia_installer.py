@@ -18,11 +18,11 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.5.0"
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.0.zip"
+APP_VERSION = "2.5.1"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.1.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.5.0/Pokemon-Pokopia-PT-BR-v2.5.0.zip"
+    "v2.5.1/Pokemon-Pokopia-PT-BR-v2.5.1.zip"
 )
 
 ROMFS_FILES = (

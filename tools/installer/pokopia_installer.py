@@ -18,11 +18,11 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.2.6"
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.2.6.zip"
+APP_VERSION = "2.5.0"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.0.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.2.6/Pokemon-Pokopia-PT-BR-v2.2.6.zip"
+    "v2.5.0/Pokemon-Pokopia-PT-BR-v2.5.0.zip"
 )
 
 ROMFS_FILES = (
@@ -34,18 +34,6 @@ ROMFS_FILES = (
 
 # The index and asset sizes distinguish the two supported game updates.
 VERSIONS = {
-    "1.0.4": {
-        "update_id": "327680",
-        "idx_size": 377056,
-        "rdb_size": 4846712,
-        "fdata_size": 19537088,
-        "hashes": {
-            "LD_C0_R.BIN": "41a15ee18a4571a226dfa52823fa43b845158821eda33074973609b662862c32",
-            "LI_C0_R.IDX": "640d956722cbdf79a113dbc98dde863549bbf87020f9bdc4deacffe703a4edbd",
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "c44a37e44b1e17338c2c375b6ad9c9604bdafcc7d427dccaede642bf196fe11d",
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "07edabc2d403d9508d82228c687dd7e54424ab20bddb287276ad027f748c7ba7",
-        },
-    },
     "2.0.1": {
         "update_id": "655360",
         "idx_size": 393536,
@@ -67,12 +55,18 @@ VERSIONS = {
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "61ec376dc272d65c21dc93d8e91502b796d81e6ddcaae564670340485da197da",
         },
         "hashes": {
-            "LD_C0_R.BIN": "14e47a25d9566182083396a74ea8c0145ed05f2c4bd362ffbfba7fe0985c27d8",
-            "LI_C0_R.IDX": "53892b81d61544a816430bdf9f14ba339aa153a2e91942bca06917bfc4cf3ed6",
+            "LD_C0_R.BIN": "5a1737f15a80cfc8b8a1a1e7fb4b6c1e1da219acb74f895b1e594c64e3168e6f",
+            "LI_C0_R.IDX": "3e8531f2b1a77e0e272c2e9b8888ab5fd0a56b73e093288c680580b2ea0e8539",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
             "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
         },
         "previous_hashes": [
+            {
+                "LD_C0_R.BIN": "14e47a25d9566182083396a74ea8c0145ed05f2c4bd362ffbfba7fe0985c27d8",
+                "LI_C0_R.IDX": "53892b81d61544a816430bdf9f14ba339aa153a2e91942bca06917bfc4cf3ed6",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
+                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
+            },
             {
                 "LD_C0_R.BIN": "fb87995bb2a2015d187a3be253ed632cbf2a600ea324e0fd67259ad6f44e4f37",
                 "LI_C0_R.IDX": "e7616f4db262641c55dab948e6fb7cb8fd28812c1977e5fcdcd93a2173c9faf9",
@@ -157,9 +151,8 @@ def inspect_romfs(path: Path) -> dict | None:
             except OSError:
                 return None
 
-        # The bundled hashes and sizes describe the translated output. Keep the
-        # legacy 1.0.4 size check because its original source fingerprint was
-        # not recorded; 2.0.1 must match exact source or output hashes.
+        # The bundled hashes and sizes describe the translated output; source
+        # installations must match their exact 2.0.1/2.0.1a fingerprint.
         output_sizes_match = (
             sizes.get("LI_C0_R.IDX") == signature["idx_size"]
             and sizes.get("motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb")
@@ -181,7 +174,7 @@ def inspect_romfs(path: Path) -> dict | None:
                 )
             except OSError:
                 return None
-            if output_hashes_match or version == "1.0.4":
+            if output_hashes_match:
                 return {
                     "version": version,
                     "update_id": signature["update_id"],
@@ -348,7 +341,7 @@ class Installer:
             frame,
             text=(
                 "Escolha a pasta do jogo, do update ou a pasta romfs. "
-                "O instalador reconhece as versões 1.0.4 e 2.0.1."
+                "O instalador reconhece as versões 2.0.1 e 2.0.1a."
             ),
             wraplength=710,
             justify="left",
@@ -460,7 +453,7 @@ class Installer:
             )
             ttk.Label(
                 self.list_frame,
-                text="Nenhuma instalação 1.0.4 ou 2.0.1 reconhecida.",
+                text="Nenhuma instalação 2.0.1 ou 2.0.1a reconhecida.",
                 wraplength=660,
                 justify="left",
             ).pack(anchor="w")

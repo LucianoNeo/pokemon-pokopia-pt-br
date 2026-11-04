@@ -1,16 +1,20 @@
 # Instalador PT-BR
 
 O instalador reconhece as versões **2.0.1** e **2.0.1a**. Execute
-`Pokemon-Pokopia-PT-BR-Installer-v2.5.2.exe`. Ele usa
+`Pokemon-Pokopia-PT-BR-Installer-v2.5.3.exe`. Ele usa
 as pastas de tradução incluídas no pacote; não precisa baixar o ZIP novamente.
 Também é possível selecionar a pasta do jogo, do update ou de `romfs`.
+
+A detecção confere os nomes e caminhos dos quatro arquivos necessários. Ao
+instalar, o programa faz backup dos arquivos atuais e os substitui pelos do
+pacote.
 
 Antes de substituir os arquivos do jogo, o programa cria backups em:
 
 `%LOCALAPPDATA%\PokemonPokopiaPTBR\backups`
 
-Se o instalador for executado sem as pastas de tradução ao lado, ele baixa e
-confere os arquivos do pacote oficial v2.5.2 como alternativa.
+Se o instalador for executado sem as pastas de tradução ao lado, ele baixa o
+pacote oficial v2.5.3 como alternativa.
 
 ## Compilar no Windows
 
@@ -21,4 +25,4 @@ Com Python 3.12 instalado, execute:
 ```
 
 O script prepara um ambiente virtual temporário, instala PyInstaller e gera o
-executável independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.2.exe`.
+executável independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.3.exe`.

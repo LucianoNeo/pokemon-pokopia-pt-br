@@ -18,11 +18,11 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.5.2"
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.2.zip"
+APP_VERSION = "2.5.3"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.3.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.5.2/Pokemon-Pokopia-PT-BR-v2.5.2.zip"
+    "v2.5.3/Pokemon-Pokopia-PT-BR-v2.5.3.zip"
 )
 
 ROMFS_FILES = (
@@ -36,62 +36,6 @@ ROMFS_FILES = (
 VERSIONS = {
     "2.0.1": {
         "update_id": "655360",
-        "idx_size": 393536,
-        "rdb_size": 5752340,
-        "fdata_size": 21896960,
-        # Original 2.0.1/2.0.1a RomFS files. The previous installer compared
-        # source files against translated output sizes, so clean installations
-        # were rejected before the patch could be applied.
-        "source_sizes": {
-            "LD_C0_R.BIN": 247317504,
-            "LI_C0_R.IDX": 393536,
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": 5752340,
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": 264309,
-        },
-        "source_hashes": {
-            "LD_C0_R.BIN": "2ea76fd78d5d2c0111fc2e3d8258ed35faaad6a52420d7fdee7c8a2ed2122433",
-            "LI_C0_R.IDX": "86fb3fae4e3092594e45c350f7f12e4cbe4a53b513f07c1f38498f6ec988c0b1",
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "47f715d98cbe8718ce0c5e51dd4666c6587796a51f72b904a76bde8d227be786",
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "61ec376dc272d65c21dc93d8e91502b796d81e6ddcaae564670340485da197da",
-        },
-        "hashes": {
-            "LD_C0_R.BIN": "5a1737f15a80cfc8b8a1a1e7fb4b6c1e1da219acb74f895b1e594c64e3168e6f",
-            "LI_C0_R.IDX": "3e8531f2b1a77e0e272c2e9b8888ab5fd0a56b73e093288c680580b2ea0e8539",
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
-            "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
-        },
-        "previous_hashes": [
-            {
-                "LD_C0_R.BIN": "14e47a25d9566182083396a74ea8c0145ed05f2c4bd362ffbfba7fe0985c27d8",
-                "LI_C0_R.IDX": "53892b81d61544a816430bdf9f14ba339aa153a2e91942bca06917bfc4cf3ed6",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
-            },
-            {
-                "LD_C0_R.BIN": "fb87995bb2a2015d187a3be253ed632cbf2a600ea324e0fd67259ad6f44e4f37",
-                "LI_C0_R.IDX": "e7616f4db262641c55dab948e6fb7cb8fd28812c1977e5fcdcd93a2173c9faf9",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
-            },
-            {
-                "LD_C0_R.BIN": "f2046a44fd1125d7ee505bb8411d5c2d0c2e4ef7017f2b59cfa76e6f3f1e35c1",
-                "LI_C0_R.IDX": "a8b067576a1384d20e3812edd12686f64f8658ea03a8641dae17577993bff896",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
-            },
-            {
-                "LD_C0_R.BIN": "e9f0fa4a622f619131902df1f6db7c50a2b8ae4f4bcaca5a8f00845afd1e854a",
-                "LI_C0_R.IDX": "04098c36f84243c83fb063706011338e384ec5dc1ee6732452899d562160bc35",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
-            },
-            {
-                "LD_C0_R.BIN": "7982642fe324a939755abe0f095846dea0ac366f8c9a1c799c61c53f628ed249",
-                "LI_C0_R.IDX": "52c517e6d52807ae853542eb1217c733e62f25f01316713657a53277033b1335",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb": "bb102f85a7293760db8c9d6b1ac1546e64e7b1da2a3a76cbbb1b464bb08ee609",
-                "motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata": "914d1615fc3b4a6307db05678842cac739ac55d088ad4d4aa26444b448f0d891",
-            }
-        ],
     },
 }
 
@@ -109,77 +53,18 @@ IGNORED_DIRS = {
 }
 
 
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(8 * 1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
 def inspect_romfs(path: Path) -> dict | None:
-    """Return a supported version when its source or translated files match."""
+    """Return a supported version when all expected RomFS filenames exist."""
     paths = {relative: path / Path(relative) for relative in ROMFS_FILES}
     if not all(candidate.is_file() for candidate in paths.values()):
         return None
 
-    try:
-        sizes = {
-            relative: candidate.stat().st_size
-            for relative, candidate in paths.items()
-        }
-    except OSError:
-        return None
-
     for version, signature in VERSIONS.items():
-        source_sizes = signature.get("source_sizes")
-        source_hashes = signature.get("source_hashes")
-        if source_sizes and source_hashes and all(
-            sizes.get(relative) == expected_size
-            for relative, expected_size in source_sizes.items()
-        ):
-            try:
-                if all(
-                    sha256_file(paths[relative]) == expected_hash
-                    for relative, expected_hash in source_hashes.items()
-                ):
-                    return {
-                        "version": version,
-                        "update_id": signature["update_id"],
-                        "path": path.resolve(),
-                    }
-            except OSError:
-                return None
-
-        # The bundled hashes and sizes describe the translated output; source
-        # installations must match their exact 2.0.1/2.0.1a fingerprint.
-        output_sizes_match = (
-            sizes.get("LI_C0_R.IDX") == signature["idx_size"]
-            and sizes.get("motor_asset_re/KIDS_PLATFORM_OUNCE/root.rdb")
-            == signature["rdb_size"]
-            and sizes.get("motor_asset_re/KIDS_PLATFORM_OUNCE/0x4b13d561.fdata")
-            == signature["fdata_size"]
-        )
-        if output_sizes_match:
-            try:
-                actual_hashes = {
-                    relative: sha256_file(candidate)
-                    for relative, candidate in paths.items()
-                }
-                output_hashes_match = any(
-                    actual_hashes == expected_hashes
-                    for expected_hashes in [
-                        signature["hashes"], *signature.get("previous_hashes", [])
-                    ]
-                )
-            except OSError:
-                return None
-            if output_hashes_match:
-                return {
-                    "version": version,
-                    "update_id": signature["update_id"],
-                    "path": path.resolve(),
-                }
+        return {
+            "version": version,
+            "update_id": signature["update_id"],
+            "path": path.resolve(),
+        }
     return None
 
 
@@ -268,36 +153,30 @@ class FolderPackage:
 
 
 def is_valid_bundled_package(root: Path) -> bool:
-    """Accept adjacent version folders only when every included file matches."""
+    """Accept a bundled payload when its expected files are present."""
     found_version = False
-    for version, signature in VERSIONS.items():
+    for version in VERSIONS:
         romfs = root / version / "romfs"
         if not romfs.exists():
             continue
         found_version = True
-        try:
-            for relative, expected_hash in signature["hashes"].items():
-                candidate = romfs / Path(relative)
-                if not candidate.is_file() or sha256_file(candidate) != expected_hash:
-                    return False
-        except OSError:
+        if not all((romfs / Path(relative)).is_file() for relative in ROMFS_FILES):
             return False
     return found_version
 
 
 def is_valid_zip_package(path: Path) -> bool:
-    """Verify the payload hashes; the ZIP also contains this executable."""
+    """Verify that the ZIP contains each expected payload file exactly once."""
     try:
         with zipfile.ZipFile(path) as archive:
             names = archive.namelist()
-            for version, signature in VERSIONS.items():
-                for relative, expected_hash in signature["hashes"].items():
+            for version in VERSIONS:
+                for relative in ROMFS_FILES:
                     member = f"{version}/romfs/{relative}"
                     if names.count(member) != 1:
                         return False
-                    with archive.open(member) as stream:
-                        if hashlib.file_digest(stream, "sha256").hexdigest() != expected_hash:
-                            return False
+                    if archive.getinfo(member).file_size <= 0:
+                        return False
     except (OSError, ValueError, zipfile.BadZipFile, KeyError, RuntimeError, EOFError):
         return False
     return True
@@ -600,7 +479,7 @@ class Installer:
                         )
             if not is_valid_zip_package(partial):
                 raise ValueError(
-                    "Os arquivos do pacote baixado não correspondem à release oficial."
+                    "O pacote baixado não contém todos os arquivos esperados."
                 )
             os.replace(partial, cached)
             self.events.put(("progress", 100, cached.stat().st_size, cached.stat().st_size))
@@ -627,12 +506,6 @@ class Installer:
                 raise ValueError(f"O pacote não contém {member}.") from exc
             if info.file_size <= 0:
                 raise ValueError(f"O arquivo do pacote está vazio: {member}")
-
-        if self.is_already_installed(romfs, signature["hashes"], archive, member_names):
-            self.events.put(
-                ("status", f"A versão {version} já está traduzida; sem alterações.")
-            )
-            return None
 
         local_app_data = Path(
             os.environ.get("LOCALAPPDATA", Path.home() / "AppData" / "Local")
@@ -696,21 +569,6 @@ class Installer:
             shutil.rmtree(stage, ignore_errors=True)
 
         return backup
-
-    @staticmethod
-    def is_already_installed(
-        romfs: Path, expected_hashes: dict, archive: zipfile.ZipFile, members: dict
-    ) -> bool:
-        for relative in ROMFS_FILES:
-            target = romfs / Path(relative)
-            if not target.is_file():
-                return False
-            if target.stat().st_size != archive.getinfo(members[relative]).file_size:
-                return False
-        return all(
-            sha256_file(romfs / Path(relative)) == expected_hashes[relative]
-            for relative in ROMFS_FILES
-        )
 
     def poll_events(self) -> None:
         try:

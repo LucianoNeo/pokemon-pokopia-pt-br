@@ -8,7 +8,18 @@ O instalador independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.5.exe` aplica a 
 - **Arquivo NUP:** localiza o update 655360 de Pokémon Pokopia dentro do contêiner e cria uma nova cópia traduzida, por padrão com o sufixo `-PTBR`. O NUP de origem é preservado. Os outros pacotes e dados do contêiner são mantidos.
 - **Arquivo NSP:** os arquivos NCA do NSP são criptografados, então o instalador não altera o NSP. Em vez disso, instala a tradução como mod LayeredFS em `user\load\0400A3A01EE4C000\romfs` no perfil do Eglantine selecionado. O NSP original fica intacto.
 
-Para a instalação por NSP, selecione a pasta `user` do Eglantine quando o instalador pedir. Se selecionar a própria pasta `load`, o instalador também reconhece esse caso. A identificação interna de versão/título do NSP criptografado não é possível; use o NSP de Pokémon Pokopia 2.0.1.
+### Como localizar a pasta do Eglantine para um NSP
+
+O instalador não altera o NSP, pois seus arquivos internos são criptografados. Ele instala a tradução como mod LayeredFS no perfil do Eglantine selecionado.
+
+1. Abra a mesma cópia do Eglantine que você usa para iniciar Pokémon Pokopia.
+2. No menu, clique em **File → Open Eglantine Folders → Mod Folder**. O Explorador abrirá a pasta `load` correta para esse perfil.
+3. Quando o instalador pedir uma pasta, selecione essa pasta `load`.
+4. Os arquivos serão instalados em `load\0400A3A01EE4C000\romfs`. Inicie o jogo usando essa mesma cópia/perfil do Eglantine.
+
+Para localizar manualmente, clique com o botão direito no atalho do Eglantine e escolha **Abrir local do arquivo**. Se houver uma pasta `user` ao lado de `eglantine.exe`, use `<pasta do Eglantine>\user\load`. Sem essa pasta portátil, o perfil costuma estar em `%APPDATA%\eden\load`; pressione **Win + R**, digite `%APPDATA%\eden\load` e pressione Enter.
+
+Se você mantém várias instalações do Eglantine, abra **Mod Folder** na instalação usada para jogar. Cada instalação pode usar um perfil diferente. A identificação interna de versão/título do NSP criptografado não é possível; use o NSP de Pokémon Pokopia 2.0.1.
 
 O instalador pode usar os arquivos de tradução incluídos na pasta/ZIP da release. Se o executável estiver sozinho, baixa como alternativa o pacote de tradução PT-BR v2.5.5.
 

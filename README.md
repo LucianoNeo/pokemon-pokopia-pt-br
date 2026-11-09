@@ -4,7 +4,7 @@
 
 Tradução comunitária não oficial de **Pokémon Pokopia** para português brasileiro, por **LucianoNeo**, feita com auxílio de inteligência artificial e revisão manual. Esta versão é destinada ao jogo **2.0.1 e 2.0.1a**. Os nomes dos golpes permanecem em inglês por escolha do projeto.
 
-**Versão do mod: 2.5.6**
+**Versão do mod: 2.5.7**
 
 | Versão do jogo | Update | Cobertura de localização |
 | --- | --- | --- |
@@ -14,7 +14,11 @@ Tradução comunitária não oficial de **Pokémon Pokopia** para português bra
 
 ## Download
 
-[**Baixar a tradução PT-BR v2.5.6 — jogo 2.0.1/2.0.1a (ZIP com instalador)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.5.6/Pokemon-Pokopia-PT-BR-v2.5.6.zip)
+[**Baixar a tradução PT-BR v2.5.7 — jogo 2.0.1/2.0.1a (ZIP com instalador)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.5.7/Pokemon-Pokopia-PT-BR-v2.5.7.zip)
+
+## Consultar e editar textos
+
+O repositório inclui um editor local para visualizar, comparar com o RomFS original, pesquisar e alterar textos dos arquivos `LD_C0_R.BIN` / `LI_C0_R.IDX`, com backup automático ao salvar. Para iniciar no Windows, execute [`tools/text-editor/Iniciar_Editor.bat`](tools/text-editor/Iniciar_Editor.bat); consulte o [guia do editor](tools/text-editor/README.md).
 
 ## Conteúdo traduzido
 
@@ -30,7 +34,7 @@ O ZIP contém somente a pasta da versão compatível:
 
 ```text
 README.md
-Pokemon-Pokopia-PT-BR-Installer-v2.5.6.exe
+Pokemon-Pokopia-PT-BR-Installer-v2.5.7.exe
 2.0.1/
 └── romfs/
     ├── LD_C0_R.BIN
@@ -56,7 +60,7 @@ Pokemon-Pokopia-PT-BR-Installer-v2.5.6.exe
 ### Instalação automática
 
 1. Extraia o ZIP para uma pasta.
-2. Execute `Pokemon-Pokopia-PT-BR-Installer-v2.5.6.exe`.
+2. Execute `Pokemon-Pokopia-PT-BR-Installer-v2.5.7.exe`.
 3. Escolha uma pasta do jogo/update/`romfs` ou selecione um arquivo `.nsp`/`.nup`.
 4. Feche o jogo antes de aplicar a tradução. O emulador pode continuar aberto se o jogo não estiver rodando. O instalador guarda os arquivos substituídos em `%LOCALAPPDATA%\PokemonPokopiaPTBR\backups`.
 

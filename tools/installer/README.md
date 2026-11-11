@@ -1,6 +1,6 @@
 # Instalador PT-BR
 
-O instalador independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.7.exe` aplica a tradução da versão 2.0.1. Ele não exige Python para ser executado.
+O instalador independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.8.exe` aplica a tradução da versão 2.0.1. Ele não exige Python para ser executado.
 
 ## Formatos aceitos
 
@@ -21,7 +21,7 @@ Para localizar manualmente, clique com o botão direito no atalho do Eglantine e
 
 Se você mantém várias instalações do Eglantine, abra **Mod Folder** na instalação usada para jogar. Cada instalação pode usar um perfil diferente. A identificação interna de versão/título do NSP criptografado não é possível; use o NSP de Pokémon Pokopia 2.0.1.
 
-O instalador pode usar os arquivos de tradução incluídos na pasta/ZIP da release. Se o executável estiver sozinho, baixa como alternativa o pacote de tradução PT-BR v2.5.7.
+O instalador pode usar os arquivos de tradução incluídos na pasta/ZIP da release. Se o executável estiver sozinho, baixa como alternativa o pacote de tradução PT-BR v2.5.8.
 
 ## Compilar no Windows
 
@@ -31,4 +31,6 @@ Com Python 3.12 instalado, execute:
 .\tools\installer\build.ps1 -OutputDirectory C:\caminho\de\saida
 ```
 
-O script prepara um ambiente temporário, instala PyInstaller e gera o executável independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.7.exe`.
+O script prepara um ambiente temporário, instala PyInstaller e gera o executável independente `Pokemon-Pokopia-PT-BR-Installer-v2.5.8.exe`.
+
+\n

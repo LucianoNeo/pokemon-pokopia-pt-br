@@ -19,14 +19,14 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 
-APP_VERSION = "2.5.7"
+APP_VERSION = "2.5.8"
 GAME_TITLE_ID = 0x0400A3A01EE4C000
 GAME_TITLE_ID_HEX = f"{GAME_TITLE_ID:016X}"
 NUP_UPDATE_VERSION = 655360
-PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.7.zip"
+PACKAGE_NAME = "Pokemon-Pokopia-PT-BR-v2.5.8.zip"
 PACKAGE_URL = (
     "https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/"
-    "v2.5.7/Pokemon-Pokopia-PT-BR-v2.5.7.zip"
+    "v2.5.8/Pokemon-Pokopia-PT-BR-v2.5.8.zip"
 )
 
 ROMFS_FILES = (
@@ -1347,3 +1347,5 @@ class Installer:
 
 if __name__ == "__main__":
     Installer().run()
+
+\n

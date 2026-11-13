@@ -4,7 +4,7 @@
 
 Tradução comunitária não oficial de **Pokémon Pokopia** para português brasileiro, por **LucianoNeo**, feita com auxílio de inteligência artificial e revisão manual. Esta versão é destinada ao jogo **2.0.1 e 2.0.1a**. Os nomes dos golpes permanecem em inglês por escolha do projeto.
 
-**Versão do mod: 2.5.8**
+**Versão do mod: 2.5.9**
 
 | Versão do jogo | Update | Cobertura de localização |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Tradução comunitária não oficial de **Pokémon Pokopia** para português bra
 
 ## Download
 
-[**Baixar a tradução PT-BR v2.5.8 — jogo 2.0.1/2.0.1a (ZIP com instalador)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.5.8/Pokemon-Pokopia-PT-BR-v2.5.8.zip)
+[**Baixar a tradução PT-BR v2.5.9 — jogo 2.0.1/2.0.1a (ZIP com instalador)**](https://github.com/LucianoNeo/pokemon-pokopia-pt-br/releases/download/v2.5.9/Pokemon-Pokopia-PT-BR-v2.5.9.zip)
 
 ## Consultar e editar textos
 
@@ -34,7 +34,7 @@ O ZIP contém somente a pasta da versão compatível:
 
 ```text
 README.md
-Pokemon-Pokopia-PT-BR-Installer-v2.5.8.exe
+Pokemon-Pokopia-PT-BR-Installer-v2.5.9.exe
 2.0.1/
 └── romfs/
     ├── LD_C0_R.BIN
@@ -60,7 +60,7 @@ Pokemon-Pokopia-PT-BR-Installer-v2.5.8.exe
 ### Instalação automática
 
 1. Extraia o ZIP para uma pasta.
-2. Execute `Pokemon-Pokopia-PT-BR-Installer-v2.5.8.exe`.
+2. Execute `Pokemon-Pokopia-PT-BR-Installer-v2.5.9.exe`.
 3. Escolha uma pasta do jogo/update/`romfs` ou selecione um arquivo `.nsp`/`.nup`.
 4. Feche o jogo antes de aplicar a tradução. O emulador pode continuar aberto se o jogo não estiver rodando. O instalador guarda os arquivos substituídos em `%LOCALAPPDATA%\PokemonPokopiaPTBR\backups`.
 
